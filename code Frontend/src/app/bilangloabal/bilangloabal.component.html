@@ -1,0 +1,33 @@
+<div>
+  <h2>Bilan Détaillé</h2>
+ 
+  <form (submit)="submitForm()">
+      <button type="button" (click)="submitForm()">Afficher Bilan Globale</button>
+  </form>
+
+  <div *ngIf="bilanGlobalResults.length > 0">
+      <h3>Résultats du Bilan Global</h3>
+      <table border="1">
+          <thead>
+              <tr>
+                  <th>Matricule</th>
+                  <th>Nom</th>
+                  <th>Prénom</th>
+                  <th>Total Jours Absence</th>
+                  <th>Total Heures Retard Seance 1</th>
+                  <th>Total Heures Retard Seance 2</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let result of bilanGlobalResults">
+                  <td>{{ result.matricule }}</td>
+                  <td>{{ result.nom }}</td>
+                  <td>{{ result.prenom }}</td>
+                  <td>{{ result.totalJoursAbsence }}</td>
+                  <td>{{ result.totalHeuresRetardSeance1 }}</td>
+                  <td>{{ result.totalHeuresRetardSeance2 }}</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>

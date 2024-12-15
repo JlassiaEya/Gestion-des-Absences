@@ -1,0 +1,69 @@
+/* Style pour le titre "Résultat du Bilan Détaillé" */
+h2 {
+  text-align: center;
+  color: #333; /* Couleur du texte */
+}
+.form {
+  margin-top: 20px;
+  text-align: center; /* Centrer le contenu dans le formulaire */
+}
+/* Style pour le conteneur du formulaire */
+div {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les labels des champs du formulaire */
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Style pour les champs du formulaire */
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Style pour le bouton du formulaire */
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #1a1b1a; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte du bouton */
+  border: none;
+  border-radius: 5px;
+}
+
+/* Style pour la section résultat du formulaire */
+.absences-results {
+  margin-top: 20px;
+}
+
+/* Style pour la table des résultats */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Style pour l'en-tête de la table des résultats */
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style des lignes impaires de la table des résultats */
+tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}

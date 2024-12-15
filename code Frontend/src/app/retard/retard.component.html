@@ -1,0 +1,28 @@
+<h2>Vérifier les Retards </h2>
+<div class="buttons-container">
+  <button (click)="checkRetardS1()">Retards S1</button>
+  <button (click)="checkRetardS2()">Retards S2</button>
+  <button (click)="checkRetard()">Retard Complètes</button>
+</div>
+
+<table *ngIf="retards && retards.length > 0" class="retard-table">
+  <thead>
+    <tr>
+      <th>Matricule</th>
+      <th>Date/Heure de Pointage</th>
+      <th>Retard</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let retard of retards">
+      <td>{{ retard.matricule }}</td>
+      <td>{{ retard.pointageDateTime | date: 'yyyy-MM-dd HH:mm:ss' }}</td>
+      <td>{{ retard.retard }}</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<div *ngIf="retards && retards.length === 0" class="no-data-message">
+  Aucun retard trouvé.
+</div>

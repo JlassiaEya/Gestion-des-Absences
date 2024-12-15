@@ -1,0 +1,53 @@
+<div class="navbar">
+  <!--a href="https://itserv.tn/" target="_blank">-->
+    <img src="/assets/logo.jpg" alt="Company Logo" class="logo">
+  <!--</a>  -->
+  <ul>
+      <li><a routerLink="">Accueil</a></li>
+      <li><a routerLink="/absence">Absences</a></li>
+      <li><a routerLink="/retard">Retards</a></li>
+      <li><a routerLink="/bilan-global">Bilan Global</a></li>
+      <li><a routerLink="/bilan-detaille">Bilan Détaillé</a></li>
+  </ul>
+</div>
+<h1>Gestion des Absences et Retards</h1>
+      
+  <div class="container1">
+    <img src="/assets/bilan.png" alt="Image 1" class="animated-image image-left">
+    <div class="text-right">
+      <h2 class="animated-text">"Détectez l'empreinte du temps avec notre application, 
+        révélant les absences et les retards avec une précision exceptionnelle à partir des données de pointage. 
+        Transformons ensemble chaque instant en opportunité de présence et de ponctualité."
+      </h2>
+    </div>
+</div>
+
+<br>
+<br>
+<br><br>
+<br><br><br>
+<br><br>
+<br><br><br><br><br>
+<div class="container2 mt-4">
+
+  <h2 class="mb-4">Détection des Absences et Retards</h2>
+  <form (submit)="onSubmit()" enctype="multipart/form-data" #fileForm="ngForm">
+    <div class="form-group d-flex">
+      <label for="pointageFile" class="btn btn-secondary mr-2">
+        Choisir un fichier de pointage
+      </label>
+      <input type="file" (change)="onFileSelected($event)" />
+      <button type="submit">Analyser le fichier de pointage</button>
+    </div>
+  </form>
+<br>
+<form (submit)="onEmployeeFileSubmit()" enctype="multipart/form-data" #employeeFileForm="ngForm">
+  <div class="form-group d-flex">
+    <label for="EmployeeFile" class="btn btn-secondary mr-2">
+      Choisir un fichier des Employees
+    </label>
+    <input type="file" (change)="onEmployeeFileSelected($event)" />
+    <button type="submit">Analyser le fichier des Employees</button>
+  </div>
+</form>
+

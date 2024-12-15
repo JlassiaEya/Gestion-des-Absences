@@ -1,0 +1,23 @@
+<h2>Vérifier les absences </h2>
+
+<div class="buttons-container">
+  <button (click)="loadAbsencesS1()">Absences S1</button>
+  <button (click)="loadAbsencesS2()">Absences S2</button>
+  <button (click)="loadAbsences()">Absences</button>
+</div>
+
+<table *ngIf="absences && absences.length > 0" class="absences-table">
+  <thead>
+    <tr>
+      <th>Matricule</th>
+      <th>Date d'Absence</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let absence of absences">
+      <td>{{ absence.matricule }}</td>
+      <td>{{ absence.joursAbsences | date: 'yyyy-MM-dd' }}</td>
+    </tr>
+  </tbody>
+</table>

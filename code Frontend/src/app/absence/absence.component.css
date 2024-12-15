@@ -1,0 +1,75 @@
+/* Style pour le titre "Vérifier les absences ici" */
+h2 {
+    text-align: center;
+    color: #333; /* Couleur du texte */
+  }
+  
+  /* Style pour le conteneur des boutons */
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Style pour les boutons */
+  button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #1a1b1a; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Style pour la liste des absences */
+  .absences-list {
+    margin-top: 20px;
+  }
+  
+  /* Style pour le titre de la liste des absences */
+  .absences-list h2 {
+    text-align: center;
+    color: #333; /* Couleur du texte */
+  }
+  
+  /* Style pour la liste d'absences */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Style pour chaque élément de la liste d'absences */
+  li {
+    margin-bottom: 10px;
+    background-color: #f9f9f9; /* Couleur de fond de chaque élément de la liste */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  /* Style de la table */
+.absences-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Style de l'en-tête de la table */
+.absences-table th {
+  background-color: #f2f2f2;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Style des lignes de la table */
+.absences-table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Style des lignes impaires de la table */
+.absences-table tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}

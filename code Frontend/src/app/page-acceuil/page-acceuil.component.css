@@ -1,0 +1,181 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+ 
+}
+.logo {
+  width: 100px;
+  height: 150px;
+  margin-left: 10px;
+  margin-top: -7px;
+  float: right;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff; /* Couleur de fond blanche */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar img {
+  height: 50px;
+  padding: 10px;
+  margin-right: 10px; 
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex; /* Utilisation de flexbox */
+  align-items: center; /* Centrage vertical des éléments */
+  justify-content: center; 
+}
+.navbar li {
+  margin-right: 50px; /* Espacement entre les liens */
+  margin-left: 150px; /* Espacement entre le logo et les liens */
+}
+
+.navbar a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  border: 2px solid rgb(230, 223, 223);
+  color: rgb(214, 62, 27);
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+  background-color: rgb(254, 254, 254);
+  color: rgb(253, 253, 253);
+}
+
+
+/* Navbar */
+.navbar {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar img.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #0c0c0c;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid ;
+  background-color: rgb(241, 158, 126);
+  
+
+}
+
+.navbar ul li a:hover {
+  background-color: #e56211;
+  
+}
+.logo {
+  width: 100px;
+  height: 150px;
+  margin-left: 10px;
+  margin-top: -7px;
+  float: right;
+}
+/* Header */
+h1 {
+  font-size: 48px;
+  text-align: center;
+  margin: 50px 0;
+  font-family: Algerian; /* Utilise la police Arial ou une police sans serif similaire */
+  font-size: 35px; /* Définit la taille de la police */
+  font-weight: bold; /* Définit le poids de la police comme gras */
+  color: #e46428; /* Couleur du texte */
+
+}
+.animated-text {
+  transition: opacity 0.5s ease; /* Ajoute une transition pour l'opacité avec une durée de 0.5s et une accélération */
+  position: relative; /* Utilisez une position relative pour permettre de déplacer le texte */
+  top: 50%; /* Positionne le texte à 50% du conteneur parent */
+  transform: translateY(30%); /* Déplace le texte de moitié de sa propre hauteur vers le haut pour le centrer verticalement */
+  text-align: center; /* Centre le texte horizontalement */
+  font-family:"Blackadder ITC", cursive;  /* Utilise la police Arial ou une police sans serif similaire */
+  font-size: 24px; /* Définit la taille de la police */
+  font-weight: bold; /* Définit le poids de la police comme gras */
+  color: #060606; /* Couleur du texte */
+  line-height: 5; 
+}
+
+.animated-text:hover {
+  opacity: 0.7; /* Réduit l'opacité du texte au survol */
+  
+}
+
+.container2 {
+  max-width: 800px;
+  margin: 40px auto 20px; /* Ajoute une marge supérieure pour séparer des containers */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* Utilisez une position relative */
+  top: 50px; /* Déplacez la div vers le bas */
+}
+
+
+.animated-image {
+  width: 900px;
+  float: inline-start;
+  margin-right: 20px;
+}
+
+.text-right {
+  text-align: justify;
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label.btn {
+  background-color: #0b0b0b;
+  color: #fffefe;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.form-group label.btn:hover {
+  background-color: #050505;
+}
+
+
+.form-group button[type="submit"] {
+  color: #fff;
+  border: 2px solid transparent; /* Ajoutez une couleur transparente pour la bordure */
+  border-radius: 20px; /* Supprimez la redondance */
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  background-color: #ee965f;
+}

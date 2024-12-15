@@ -1,0 +1,52 @@
+/* Style pour le titre "Bilan Détaillé" */
+h2 {
+  text-align: center;
+  color: #333; /* Couleur du texte */
+}
+
+/* Style pour le formulaire */
+form {
+  margin-top: 20px;
+  text-align: center; /* Centrer le contenu dans le formulaire */
+}
+
+/* Style pour le bouton du formulaire */
+button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #1a1b1a; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte du bouton */
+  border: none;
+  border-radius: 5px;
+}
+
+/* Style pour la section résultat du formulaire */
+div {
+  margin-top: 20px;
+}
+
+/* Style pour le titre de la section résultat */
+h3 {
+  text-align: center;
+  color: #333; /* Couleur du texte */
+}
+
+/* Style pour la table des résultats */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Style pour l'en-tête de la table des résultats */
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style des lignes impaires de la table des résultats */
+tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
