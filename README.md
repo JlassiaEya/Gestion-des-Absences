@@ -63,8 +63,7 @@ Le projet consiste à développer un système informatisé pour détecter automa
 
 ### 3.1. Environnement technique
 
-- **Technologies utilisées** : Node.js, Express.js, MongoDB pour le backend. Angular pour le frontend.
-- **Authentification** : JSON Web Tokens (JWT) pour sécuriser l'accès à l'application.
+- **Technologies utilisées** : Spring boot et MySQL pour le backend. Angular pour le frontend.
 
 ### 3.2. Installation
 
